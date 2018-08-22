@@ -5,7 +5,7 @@
 
 - name: Clone
   git:
-    repo: "http://{{ username }}:{{ password }}@18.209.8.51/gitlab/depwaswho/tomcat.git"
+    repo: "http://{{ username }}:{{ password }}@github.com/kevinaguja/tomcat.git"
     dest: "{{ docker_folder }}"
 
 - name: Download war file
