@@ -1,5 +1,9 @@
 ---
-
+- name: Delete Container
+  docker:
+    name: tomcat
+    image: "{{ image_version }}"
+    state: absent
 
 - name: Build Docker
   docker_image:
