@@ -10,7 +10,7 @@
 
 - name: Download war file
   get_url:
-    url: http://18.209.8.51/nexus/content/repositories/snapshots/DTSActivity/CurrencyConverter/1/CurrencyConverter-1.war
+    url: http://54.88.105.117/nexus/content/repositories/snapshots/JavaApplication/CurrencyConverter/1/CurrencyConverter-1.war
     dest: "{{ docker_folder }}/resources"
     mode: 0644
     url_password: "{{ password }}"
