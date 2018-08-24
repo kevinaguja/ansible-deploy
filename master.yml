@@ -1,6 +1,8 @@
 - hosts: tomcat
   become: true
   become_user: root
+  environment:
+    PYTHONPATH: "/usr/lib/python2.7/site-packages"
 
   roles:
     - download_war
