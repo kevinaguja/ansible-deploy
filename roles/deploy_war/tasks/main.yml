@@ -1,4 +1,14 @@
 ---
+- name: install pip
+  yum: name=python-pip state=latest
+
+- name: work around docker-py
+  pip:
+    executable=/usr/local/bin/pip
+    name=docker-py
+    state=present
+    version=1.8.1
+    
 - name: Delete Container
   docker:
     name: tomcat
