@@ -4,7 +4,7 @@
 
 - name: work around docker-py
   pip:
-    executable=/usr/local/bin/pip
+    executable=/usr/local/pip
     name=docker-py
     state=present
     version=1.8.1
