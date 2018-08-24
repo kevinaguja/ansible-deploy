@@ -27,6 +27,6 @@
     name: tomcat
     image: "{{ image_version }}"
     state: started
-    net: adop-network
+    net: network
     restart_policy: always
     ports: "{{ ports }}"
