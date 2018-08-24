@@ -29,4 +29,6 @@
     state: started
     net: network
     restart_policy: always
-    ports: "{{ ports }}"
+    ports: 
+    - "{{ ports }}"
+    - "54.175.18.225:9999/tcp"
