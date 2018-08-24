@@ -1,7 +1,4 @@
 ---
-- hosts: <host>
-  environment:
-    PYTHONPATH: "/usr/lib/python2.7/site-packages"
 - name: Delete Container
   docker:
     name: tomcat
