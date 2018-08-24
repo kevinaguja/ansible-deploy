@@ -29,4 +29,4 @@
     state: started
     net: network
     restart_policy: always
-    ports: "{{ ports }}"
+    ports: "9998:9999"
